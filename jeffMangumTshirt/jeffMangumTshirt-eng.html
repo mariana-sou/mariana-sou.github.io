@@ -1,0 +1,140 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Jeff Mangum T-Shirt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="jeffMangumTshirt_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+              <a href="jeffMangumTshirt-pt.html"><div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                 <li><a href="/illustrGallery/gallery.html" class= "liAnchor">GALLERY</a></li>
+                 <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+               </ul>
+
+          <div id="selectLangMobile"><a href="jeffMangumTshirt-pt.html" class="liAnchor">PT</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>Jeff Mangum <br>T-shirt</h1>
+                <h2>"Oh Comely" homage</h2>
+              </div>
+                <ul>
+                <li>Standard EU Unisex M Size Shirt</li>
+                <li>Black & White Digital Transfer Print</li>
+                <li>Academic Project</li>
+                <li>2018</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                    The briefing for this project was to create a t-shirt for a celebrity, featuring their face and a notable quote. The t-shirt I created depicts Jeff Mangum, the frontman of the band Neutral Milk Hotel.
+                   <br>The design is based on the last verses of the song “Oh Comely”, written into the illustration; as such, his own portrait blends itself with the design and shirt itself.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/j1.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/j2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="img/j1.jpg">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="img/j2.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/j1.jpg" onclick="currentSlide(1)" alt="Jeff Mangum Tshirt">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/j2.png" onclick="currentSlide(2)" alt="Tshirt Design">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,179 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Wake, by The Antlers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="wakeCube_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+              <a href="wakeCube-pt.html"><div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                 <li><a href="/illustrGallery/gallery.html" class= "liAnchor">GALLERY</a></li>
+                 <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+               </ul>
+
+          <div id="selectLangMobile"><a href="wakeCube-pt.html" class="liAnchor">PT</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1><i>Wake</i>, <br>By The Antlers</h1>
+                <h2>On Letting People In</h2>
+              </div>
+                <ul>
+                <li>Origami Cube</li>
+                <li>Folded: 4cm x 4cm x 4cm</li>
+                <li>Unfolded: 20cm x 20cm</li>
+                <li>Digital Illustration + Analog texture frottage</li>
+                <li>2018</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  This project is an interpretation of the song “Wake”, taking into account the events of “Hospice”, a dream pop / post-rock conceptual album by The Antlers, presenting the story of an emotionally abuse relationship between the narrator, a hospice worker, and a terminally-ill patient.
+                  <br>The cube format symbolizes the room in which the narrator has isolated himself, and so the act of unfolding the origami to reveal the inner illustrations becomes a representation of the narrator’s friends’ effort to comprehend what happened to him when he’s finally able to let people in.
+                  <br>Each illustration follows a non-linear, modular structure, meant to depict the narrator’s attempts to piece together scattered memories. It takes full advantage of the folds and different unfolding sequences, organizing the order and rhytmn in which different moments of the narrative are revealed. Therefore, each user’s own unfolding approach offers up new possibilities, the act of deconstruction being crucial for its interpretation.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/wa1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/wa2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/wa3.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/wac1.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/wac2.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/wa1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/wa2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/wa3.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="img/wac1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="img/wac2.png">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/wa1.png" onclick="currentSlide(1)" alt="The Illustrated Origami Cube">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/wa2.png" onclick="currentSlide(2)" alt="Unfolding The Room">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/wa3.png" onclick="currentSlide(3)" alt="Unfolding The Room">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/wac1.png" onclick="currentSlide(4)" alt="The Room, Unfolded: Front">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/wac2.png" onclick="currentSlide(5)" alt="The Room, Unfolded: Back">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

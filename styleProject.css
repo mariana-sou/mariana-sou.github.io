@@ -1,0 +1,778 @@
+/* general stylesheet for PROJECT PAGES */
+
+/* ----- FONTES ------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap');
+
+/* --------------- STYLING DESKTOP ----------------- */
+
+html, body{
+    padding:0;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    font-size:18;
+    line-height: 1.3em;
+    cursor: url("/img/icons/mouseCursorDefault.png"), pointer;
+}
+
+#selectLang{
+  position:fixed;
+  z-index: 4;
+  top: 30px;
+  right: calc(41vw - 2em);
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #a8a8a8;
+}
+
+#selectLangMobile{
+display: none;
+}
+
+.circle{
+position:fixed;
+z-index: 0;
+border-radius: 50%;
+}
+
+#c2{
+width: 15px;
+height: 15px;
+left: 25em;
+top: 14em;
+opacity: 60%;
+}
+
+#c3{
+width: 5px;
+height: 5px;
+left: 48em;
+top: 22em;
+opacity: 40%;
+}
+
+.grad {
+  z-index: 0;
+  position: fixed;
+  height: 20vh;
+  width: 100vw;
+  bottom: 0;
+  opacity: 23%;
+}
+
+.pagedecor{
+display: block;
+position: absolute;
+z-index: 1;
+opacity: 40%;
+height: auto;
+}
+
+#pagedecor1{
+width: 400px;
+left: calc(500px + 1.5vw);
+top: 3.5em;
+}
+
+#pagedecor2{
+width: 400px;
+left: calc(350px + 1.5vw);
+top: 40em;
+transform: rotate(15deg);
+}
+
+
+/*----- SIDEBAR -----*/
+
+.navbar{
+    display:block;
+    position:fixed;
+    width: calc(180px + 8vw);
+    height:100vh;
+    padding: 0 0 0px 70px;
+}
+
+
+#signature{
+    display:block;
+    position:absolute;
+    bottom: calc(320px + 1.5vw);
+    width: calc(220px + 1vw);
+    height: auto;
+    left: 45px;
+}
+
+#navbarList{
+    display: block;
+    position: absolute;
+    padding: 0;
+    bottom: 100px;
+    list-style-type: none;
+    font-size: calc(1.3em + 0.1vw);
+    line-height: calc(1.50em + 0.1vw);
+    font-weight: 600;
+}
+
+#navicon{
+    display: none;
+    position: fixed;
+    font-size: 40px;
+    right: 25px;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px #fff;
+    -webkit-box-shadow: 0px 0px 10px 10px #fff;
+    -moz-box-shadow: 0px 0px 10px #fff;
+}
+
+#navbarList li:hover{
+float:left;
+background-repeat: no-repeat;
+background-position: right;
+margin-right: 30px;
+}
+
+a:hover, .prev, .next, .close:hover, .close:focus{
+cursor: url("/img/icons/touch.png"), pointer;
+}
+
+#smIcons{
+  display: block;
+  position: fixed;
+  bottom: 50px;
+}
+
+.smIcons{
+height: 28px;
+margin-right: 13px;
+}
+
+
+/*----- ZONA DE PROJETOS -----*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main{
+    margin-left:calc(350px + 1.5vw);
+    /* margin-left:calc(380px + 1.5vw); */
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 20px 0 30px;
+}
+
+#textZone{
+  z-index: 2;
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/*--- PROJETOS ---*/
+
+#titleSpecs{
+z-index: 3;
+display:block;
+width: 45%;
+height: 100%;
+}
+
+#titleBox{
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  top: 17em;
+  width: 120%;
+}
+
+#titleBox h1{
+margin: 0;
+line-height: 1.1em;
+font-weight: 800;
+font-size: 1.8em;
+position:absolute;
+bottom:2.4em;
+
+}
+
+#titleBox h2{
+margin: 0;
+position:absolute;
+top:calc(100% - 2.5em);
+font-weight: 600;
+line-height: 1.1em;
+}
+
+#titleBox br{
+margin-top:0em;
+}
+
+
+#titleSpecs ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  top: 23.5em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  position: absolute;
+  word-break: normal;
+  width: 16.9%;
+}
+
+#titleSpecs ul li{
+padding: 4px 0;
+color: black;
+}
+
+#description{
+z-index: 3;
+width: 50%;
+padding-bottom: 6em;
+margin: 21em 0 0 3%;
+}
+
+p{
+margin: 0;
+font-size: 1.2em;
+line-height: 1.4em;
+}
+
+br {
+display: block;
+content: "";
+margin-top: 1em;
+}
+
+
+/*----- GALERIA -----*/
+#gallery{
+z-index: 2;
+opacity: 1;
+width: calc(37% - 20px);
+right: 20px;
+padding-top: 20px;
+height: calc(100% - 20px);
+overflow-y: scroll;
+position: fixed;
+}
+
+#gallery img{
+width: 100%;
+margin-bottom: 1.5em;
+box-sizing: content-box;
+}
+
+#gallery .column:last-child img{
+margin-bottom: 50px;
+}
+
+#gallery:after {
+  content: "";
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0,0.8);
+  opacity: 1;
+}
+
+
+/* Modal Content */
+.modal-content {
+  display: block;
+  position: relative;
+  margin: auto;
+  opacity: 1;
+  width: 80%;
+  height: 100vh;
+}
+
+.mySlides{
+  height: 70%;
+  display: none;
+  padding-top: 3em;
+}
+ .mySlides img{
+ width: auto;
+ max-width: 80%;
+ max-height: 100%;
+ display: table;
+ margin: 0 auto;
+
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+ }
+
+
+ /*-- MODAL PREVIEW IMGS--*/
+ .row2{
+   width: 100%;
+   height: 8%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+ }
+
+ .column2{
+   margin:0 5px;
+ }
+
+ .column2 img{
+   height: 100%;
+   width: auto;
+ }
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 70px;
+  z-index:6;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.cursor {
+  cursor: url("/img/icons/magGlass.png"), pointer;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -70px;
+  color: white;
+  opacity: 0.5;
+  font-weight:400;
+  font-size: 70px;
+  transition: 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Button Placements */
+.next {
+  right: -5%;
+}
+
+.prev{
+  left: -5%;
+}
+
+.prev:hover,
+.next:hover {
+opacity: 1;
+}
+
+
+/* Text (1/3, Caption) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 2.5em;
+}
+
+.caption-container {
+  text-align: center;
+  padding: 1.5em 0;
+  color: white;
+}
+
+
+/*----------*/
+
+#scrollMobile{
+display: none;
+}
+
+.liAnchor{
+color: black;
+text-decoration: none;
+}
+
+footer{
+}
+
+/* --------------- STYLING TABLET // STACK TEXTO ----------------- */
+
+
+@media screen and (max-width: 1800px)  {
+main{
+  height: auto;
+  overflow: hidden;
+}
+
+#textZone{
+  width: calc(52% - 3vw);
+  height: auto;
+}
+
+
+/*--- PROJETOS ---*/
+
+#titleSpecs{
+width: 100%;
+height:auto;
+}
+
+#titleBox h1{
+bottom:2.8em;
+}
+
+#titleBox h2{
+top:calc(100% - 3em);
+}
+
+
+#titleSpecs ul{
+top: 18em;
+width: calc(70% - 30px);
+position: relative;
+}
+
+
+#description{
+margin: 19em 0 0 0;
+width: 100%;
+padding: 0 30px 2em 0;
+}
+
+#gallery{
+overflow-y: scroll;
+padding-bottom: 0em;
+position: fixed;
+width: calc(32% - 20px + 5vw);
+}
+
+.pagedecor{
+position: absolute;
+}
+
+#pagedecor2{
+top: 70em;
+}
+
+#selectLang{
+top: 25px;
+left: 70px;
+}
+
+/* ------ */
+#signature{
+    width: calc(200px + 1vw);
+    bottom: calc(295px + 1.5vw);
+}
+
+#navbarList{
+    bottom: 90px;
+    font-size: calc(1.2em + 0.1vw);
+    line-height: calc(1.55em + 0.1vw);
+}
+
+.smIcons{
+height: 26px;
+margin-right: 12px;
+}
+
+}
+/* --------------- STYLING TABLET // STACKED ----------------- */
+
+
+@media screen and (max-width: 1280px)  {
+  main{
+  margin-left: calc(200px + 10vw);
+  padding-right:0;
+  }
+
+  #textZone{
+  width: 100%;
+  order:3;
+  padding-right: 1em;
+  }
+
+  #titleSpecs{
+  width: 100%;
+  }
+
+  #titleSpecs ul{
+  position: relative;
+  top: 0;
+  }
+
+  #titleBox{
+  margin-top: 11.5em;
+  top: 0;
+  }
+
+
+  #description{
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+  }
+
+  #gallery{
+  right: 0;
+  order:1;
+  width: 100%;
+  padding: 0;
+  margin: 1.2em 0 0 0;
+  height: calc(45vh + 5vw);
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  }
+
+  #gallery > .column {
+  padding: 0 8px;
+  }
+
+  #gallery .column:first-child{
+  padding-left: 0;
+  }
+
+  #gallery .column img{
+  height: 100%;
+  width: auto;
+  }
+
+  #pagedecor1{
+  width: 300px;
+  top: calc(3em + 5vw + 45vh);
+  left: calc(380px + 10vw);
+}
+
+#pagedecor2{
+display: none;
+}
+
+#signature{
+    left: 30px;
+}
+
+#selectLang{
+left: 50px;
+}
+
+
+/*----- SIDEBAR -----*/
+
+.navbar{
+    width: calc(145px + 10vw);
+    padding-left: 50px;
+}
+
+#scrollMobile{
+display: block;
+position: relative;
+order: 2;
+margin-top: 0.5em;
+font-size: 1.4em;
+font-variant: small-caps;
+font-weight: 400;
+opacity: 0.5;
+}
+
+#scrollMobile span{
+padding-left: 0.3em;
+vertical-align: middle;
+}
+
+}
+/* --------------- STYLING TELEMÓVEL ----------------- */
+
+@media only screen and (max-width: 800px)  {
+
+  ::-webkit-scrollbar{
+  display: none;
+  }
+
+    main{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    }
+
+    .navbar{
+    display: none;
+    }
+
+    .navbar-active{
+    display: block;
+    padding: 0;
+    width: 100%;
+    z-index:4;
+    opacity: 100%;
+    background-color: white;
+    }
+
+    #selectLangMobile{
+    display: block;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 5em;
+    font-size: 1.2em;
+    }
+
+    #signature{
+    position: relative;
+    top: calc(60px + 5vh + 2vw);
+    width: calc(170px + 15vw);
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #navbarList{
+    text-align: center;
+    width: 100%;
+    top: calc(80px + 15vh + 1.5vw);
+    font-size: calc(0.9em + 1vw + 1.2vh);
+    line-height: calc(1.4em + 0.3vw + 1.3vh);
+    }
+
+    #navbarList li:hover{
+    float: none;
+    clear: center;
+    background-position: center;
+    }
+
+    #navicon{
+    display:block;
+    z-index: 5;
+    user-select: none;
+    }
+
+    #smIcons{
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    }
+
+    .smIcons{
+    height: calc(30px + 2vw);
+    margin: 0;
+    padding: 0 calc(6px + 1.8vw) 0 calc(6px + 1.8vw);
+    }
+
+    #textZone{
+    width: 100%;
+    padding: 0em 1.2em 0 1.2em;
+    }
+
+    #gallery{
+    width: 100%;
+    height: 40vh;
+    margin-top: 5.5em;
+    }
+
+    .column img{
+    pointer-events: none;
+    }
+
+    #scrollMobile{
+    left: 0.8em;
+    font-size: 1.3em;
+    opacity: 0.4;
+    }
+
+    #description{
+    font-size: 0.85em;
+    }
+
+    #pagedecor1{
+    width: 200px;
+    top: calc(7em + 40vh);
+    left: calc(5em + 12vw);
+    transform: rotate(-8deg);
+    }
+
+    #titleBox{
+    margin-top: 8.5em;
+    margin-bottom: -1em;
+    }
+
+    #titleBox h1{
+    line-height: 1.1em;
+    font-size: 1.5em;
+    }
+
+    #titleBox h2{
+    line-height: 1.1em;
+    font-size: 1.3em;
+    }
+
+    #titleSpecs ul{
+    font-size: 0.8em;
+    }
+
+    #titleSpecs ul li{
+    padding: 2px 0;
+    }
+
+    #selectLang{
+    display: none;
+    }
+
+
+
+/* ------ FOOTER + HEADER ------- */
+    header{
+        displa   y:none;
+    }
+
+    footer{
+        display:none;
+    }
+}

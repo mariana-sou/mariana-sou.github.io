@@ -1,0 +1,215 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Mariana Sou</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+        <script src="scriptGallery.js"></script>
+        <link rel="stylesheet" href="styleGallery.css">
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+            <a href="gallery-pt.html"<div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND -------------------------------------->
+            <div id="c1" class="circle"></div>
+
+            <!--- SIDEBAR -------------------------------------->
+
+            <div class="circle" id="navicon">☰</div>
+
+              <nav class="navbar">
+                <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+                    <ul id="navbarList">
+                      <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                      <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                      <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                      <li><a href="gallery.html" class= "liAnchor">GALLERY</a></li>
+                      <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+                    </ul>
+
+                <div id="selectLangMobile"><a href="gallery-pt.html" class="liAnchor">PT</a></div>
+                <div id="smIcons">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+                <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+                </div>
+              </nav>
+
+  <div id="mobileHeader">
+  <h1>
+    <p><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></p>
+    <p><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></p>
+    <p><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></p>
+  </h1>
+  <img src="/img/coverCaligr.svg" id="cover">
+  <img src="/img/h1-highlightColor.svg" id="h1Highlight">
+  </div>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+            <div id="gallery" class= "grid">
+              <div class="grid-sizer"></div>
+              <div class="gutter-sizer"></div>
+
+              <div class="column grid-item">
+                <img src="img/galinha.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/aliens.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/atzine.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/boxer.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/urso.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/e1.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/insta wolv size.png"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/v2.png"  onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column grid-item">
+                <img src="img/byw.jpg"  onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+              </div>
+
+          </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 9</div>
+                  <img src="img/galinha.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 9</div>
+                  <img src="img/aliens.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 9</div>
+                  <img src="img/atzine.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 9</div>
+                  <img src="img/boxer.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 9</div>
+                  <img src="img/urso.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 9</div>
+                  <img src="img/e1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 9</div>
+                  <img src="img/insta wolv size.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 9</div>
+                  <img src="img/v2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">9 / 9</div>
+                  <img src="img/byw.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/galinha.png" onclick="currentSlide(1)" alt="Illustration based on 8 random prompts (2019)">
+                </div>
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/aliens.png" onclick="currentSlide(2)" alt="Illustration based on 7 random prompts (2019)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/atzine.png"  onclick="currentSlide(3)" class="demo cursor" alt="Illustration for Adventure Time Finale Zine (2018)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/boxer.png"  onclick="currentSlide(4)" class="demo cursor" alt="Illustration based on 3 random prompts (2019)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/urso.png"  onclick="currentSlide(5)" class="demo cursor" alt="Illustration based on 3 random prompts (2019)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/e1.png"  onclick="currentSlide(6)" class="demo cursor" alt="Ethan Hawke Portrait (2019)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/insta wolv size.png"  onclick="currentSlide(7)" class="demo cursor" alt="Illustration based on the song 'Great Ghosts' by Mount Eerie (2018)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/v2.png"  onclick="currentSlide(8)" class="demo cursor" alt="Character Design Experiment in Acrylics (2018)">
+                </div>
+
+                <div class="column2">
+                  <img src="img/byw.jpg"  onclick="currentSlide(9)" class="demo cursor" alt="Brand Your Walk Sneakers (2020)">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+            </main>
+
+            <footer>
+            <p>All Rights Reserved © Mariana Sou, 2021</p>
+            <p>Webdesign & Coding by Mariana Sou</p>
+            </footer>
+
+          </div> <!-- end of homepage-->
+
+    </body>
+
+</html>

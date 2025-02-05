@@ -1,0 +1,183 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Wisdom Transfer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="wisdomTransfer_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+              <a href="wisdomTransfer-eng.html"><div id="selectLang" class="liAnchor">ENG</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index-pt.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">ILUSTRAÇÃO</a></li>
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">DESIGN GRÁFICO</a></li>
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">CALIGRAFIA</a></li>
+                 <li><a href="/illustrGallery/gallery-pt.html" class= "liAnchor">GALERIA&nbsp;</a></li>
+                 <li><a href="/about-pt.html" class="liAnchor">SOBRE MIM</a></li>
+               </ul>
+
+           <div id="selectLangMobile"><a href="wisdomTransfer-eng.html" class="liAnchor">ENG</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>Teatro do Absurdo<br>
+                    & Inteira</h1>
+                <h2>Zines a Riso</h2>
+              </div>
+                <ul>
+                <li>2 Zines de Capa Mole</li>
+                <li>Formato A5, 8 páginas cada</li>
+                <li>Ilustração Digital, Risografia a 2 Cores</li>
+                <li>Parte do Projeto Wisdom Transfer</li>
+                <li>Ref: POCI- 01-0145- FEDER- 029038</li>
+                <a target="_blank" rel="noopener noreferrer" href="https://endlessend.up.pt/wisdomtransfer"><li>https://endlessend.up.pt/wisdomtransfer</li></a>
+                <li>2020</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  "Teatro do Absurdo" e "Inteira" são duas narrativas visuais em formato de zine, inspiradas nas vidas de dois pintores contemporâneos reconhecidos, que se formaram e lecionaram na FBAUP: Carlos Carreiro e Graça Morais.
+                  <br>Fui convidada pelo professor Rui Vitorino Santos para desenvolver estas zines (e retratos) como parte do projeto doutoral Wisdom Transfer: Towards the scientific inscription of individual legacies in contexts of retirement from art and design higher education and research.
+                  <br>"Teatro do Absurdo" remete ao surrealismo característico do espólio de Carlos Carreiro, retratando a fuga audaz da abstração das garras do realismo remetente à arte clássica produzida na academia.
+                  <br>"Inteira", por outro lado, explora a realidade de uma artista que trabalha e se tenta assumir num Portugal ditatorial, dominado por homens, na década de 60. A narrativa expõe a tensão entre forjar a sua própria identidade enquanto artista e mulher, e se conformar aos estereótipos de mulher enquanto dona-de-casa impostos pela sociedade.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/w1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w3.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w4.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w5.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/w1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/w2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/w3.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="img/w4.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="img/w5.png">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/w1.png" onclick="currentSlide(1)" alt="Capas das Zines do Proj. Wisdom Transfer">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w2.png" onclick="currentSlide(2)" alt="Spread do 'Teatro do Absurdo'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w3.png" onclick="currentSlide(3)" alt="Spread do 'Teatro do Absurdo'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w4.png" onclick="currentSlide(4)" alt="Detalhe das zines">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w5.png" onclick="currentSlide(5)" alt="Detalhe da Contracapa do 'Teatro do Absurdo'">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

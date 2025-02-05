@@ -1,0 +1,205 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Kintsugi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="kintsugi_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+            <a href="kintsugi-pt.html"><div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+         <div class="circle" id="navicon">☰</div>
+
+          <nav class="navbar">
+           <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                 <li><a href="/illustrGallery/gallery.html" class= "liAnchor">GALLERY</a></li>
+                 <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+               </ul>
+
+           <div id="selectLangMobile"><a href="kintsugi-pt.html" class="liAnchor">PT</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>KINTSUGI</h1>
+                <h2>Picturebook zine</h2>
+              </div>
+                <ul>
+                <li>32 pages (24 + 8 page insert)</li>
+                <li>Zine: 29 x 19,7 cm</li>
+                <li>3 Color Risoprint</li>
+                <li>Red + Blue + Metallic Gold</li>
+                <li>Original Artworks: 34,4 x 25,4 cm</li>
+                <li>Watercolor + Colored Pencil + Wax Crayon</li>
+                <li>January 2020</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  Kintsugi is a risograph picturebook printed in zine format, and it is an expansion on the popular english expression “[like a] bull in a china shop”. Unlike its portuguese equivalent (“elephant in a china shop”), the usage of the bull in the english variant evokes a crime of anger, agression and passion.
+                  <br>As such, this interpretation delves into the reasons <i>why</i> a bull would destroy a china shop: it explores cycles of abuse, cruelty, wrath and destruction. Beyond its first reading lies a powerful metaphor for how we deal with our failed relationships.
+                  <br>Two different techniques (and colors) were chosen to better represent this clash of energies: blue watercolor for the serene, delicate porcelaine, and red crayons for the restless, tempestuous bull.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/kintsugi4.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi5.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi1.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi2.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi3.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi6.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/kintsugi_capa.png"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="img/kintsugi4.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="img/kintsugi5.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="img/kintsugi1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="img/kintsugi2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="img/kintsugi3.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="img/kintsugi6.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="img/kintsugi_capa.png">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi4.png" onclick="currentSlide(1)" alt="'Kintsugi' Detail">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi5.png" onclick="currentSlide(2)" alt="'Kintsugi' Detail">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi1.png" onclick="currentSlide(3)" alt="'Kintsugi' spread">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi2.png" onclick="currentSlide(4)" alt="'Kintsugi' spread">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi3.png" onclick="currentSlide(5)" alt="'Kintsugi' spread">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi6.png" onclick="currentSlide(6)" alt="'Kintsugi' Insert Detail">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/kintsugi_capa.png" onclick="currentSlide(7)" alt="'Kintsugi' Cover Lettering">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

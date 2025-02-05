@@ -1,0 +1,183 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Wisdom Transfer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="wisdomTransfer_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+              <a href="wisdomTransfer-pt.html"><div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                 <li><a href="/illustrGallery/gallery.html" class= "liAnchor">GALLERY</a></li>
+                 <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+               </ul>
+
+           <div id="selectLangMobile"><a href="wisdomTransfer-pt.html" class="liAnchor">PT</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>ABSURD THEATRE<br>
+                    & WHOLE</h1>
+                <h2>Riso Zines</h2>
+              </div>
+                <ul>
+                <li>2 Softcover Zines</li>
+                <li>A5 format, 8 pgs each</li>
+                <li>Digital illustration, 2 Color Risograph Print</li>
+                <li>Part of the Wisdom Transfer project</li>
+                <li>Ref: POCI- 01-0145- FEDER- 029038</li>
+                <a target="_blank" rel="noopener noreferrer" href="https://endlessend.up.pt/wisdomtransfer"><li>https://endlessend.up.pt/wisdomtransfer</li></a>
+                <li>2020</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  Absurd Theatre and Whole are two visual narrative zines inspired by the lives of two recognized contemporary elderly painters who graduated and gave classes at FBAUP, namely, Carlos Carreiro and Graça Morais.
+                  <br>I was invited by professor Rui Vitorino Santos to develop these zines and stand-alone portraits as part of the doctoral project Wisdom Transfer: Towards the scientific inscription of individual legacies in contexts of retirement from art and design higher education and research.
+                  <br>Absurd Theatre takes inspiration from the surrealism of Carlos Carreiro’s work, depicting the daring escape of stylized drawing from the confining realism of the classic art produced in academia.
+                  <br> Whole, on the other hand, explores the reality of a female artist working in a male-domineered, dictatorship-driven Portugal during the 1960s, depicting the struggle between forging one’s own identity as a woman and adhering to stereotypes of being a housewife.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/w1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w3.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w4.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/w5.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/w1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/w2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/w3.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="img/w4.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="img/w5.png">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/w1.png" onclick="currentSlide(1)" alt="Wisdom Transfer Covers">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w2.png" onclick="currentSlide(2)" alt="'Absurd Theatre' Riso Zine Spread 1">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w3.png" onclick="currentSlide(3)" alt="'Absurd Theatre' Riso Zine Spread 2">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w4.png" onclick="currentSlide(4)" alt="Riso Zine Spread Detail">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/w5.png" onclick="currentSlide(5)" alt="'Absurd Theatre' Backcover Detail">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

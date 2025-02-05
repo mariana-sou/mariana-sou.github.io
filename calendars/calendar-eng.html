@@ -1,0 +1,194 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Illustrated Calendars</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="calendar_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+            <a href="calendar-pt.html"><div id="selectLang" class="liAnchor">PT</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index.html#gallery" class= "liAnchor">ILLUSTRATION</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">GRAPHIC DESIGN</a></li>
+                 <li><a href="/index.html#gallery" class= "liAnchor">CALLIGRAPHY</a></li>
+                 <li><a href="/illustrGallery/gallery.html" class= "liAnchor">GALLERY</a></li>
+                 <li><a href="/about-eng.html" class="liAnchor">ABOUT ME</a></li>
+               </ul>
+
+           <div id="selectLangMobile"><a href="calendar-pt.html" class="liAnchor">PT</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>ILLUSTRATED <br>RISO CALENDARS</h1>
+                <h2>Curated by Ruben Roxo</h2>
+              </div>
+                <ul>
+                <li>Risoprinted Illustrated Calendars</li>
+                <li>Curated by <span style="font-weight:500;"><a target="_blank" rel="noopener noreferrer" class="liAnchor" href="https://www.instagram.com/ruben.roxo/">Ruben Roxo</a></span></li>
+                <li>Graphic Design by <span style="font-weight:500;"><a target="_blank" rel="noopener noreferrer" class="liAnchor" href="https://catarinaneves.cargo.site/">Catarina Neves</a></span></li>
+                <li>Yearly theme depicted by 12 illustrators</li>
+                <li>2021 &#10230; "Party", December, Green/Fluorescent Pink</li>
+                <li>2020 &#10230; "Home", June, Yellow/Green</li>
+                <li>2019 &#10230; "Dreams and Goals", November, Yellow/Fluorescent Pink</li>
+                <li><span style="font-weight: 500;">2019 Illustration featured in Clube dos Criativos Expo '19</span></li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  The Illustrated Calendar is an on-going project created and curated by Ruben Roxo, inviting a selection of 12 young illustrators for each year's edition who follow a specific theme.
+                  <br>It is a limited edition, risoprinted calendar for the art aficionados and collectors. Because of its printing technique, each calendar is a unique piece, featuring 4 combinations of vibrant colors to match the seasons.
+                  <br>The 2021 edition was sponsored by Olmar.<span style="font-weight:500;"><a target="_blank" rel="noopener noreferrer" class= "liAnchor" href="https://ko-fi.com/s/bff4620bbe"> Purchase it @ ko-fi.com</a></span>
+
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/c1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/c6.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/c8.jpg"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/c5.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/c0.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/c4.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="img/c1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="img/c6.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="img/c8.jpg">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="img/c5.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="img/c0.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="img/c4.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/c1.png" onclick="currentSlide(1)" alt="Close-up on my illustration for the month of December, 2021 Edition">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/c6.png" onclick="currentSlide(2)" alt="My illustration for the month of June, 2020 Edition">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/c8.jpg" onclick="currentSlide(3)" alt="My illustration for the month of November, 2019 Edition">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/c5.png" onclick="currentSlide(4)" alt="2020 Calendar">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/c0.png" onclick="currentSlide(5)" alt="2021 Calendar">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/c4.png" onclick="currentSlide(6)" alt="December, 2021 Edition">
+                </div>
+
+              </div>
+              </div>
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

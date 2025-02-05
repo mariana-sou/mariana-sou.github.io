@@ -1,0 +1,231 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+        <title>Fusion Cuisine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styleProject.css">
+        <link rel="stylesheet" href="fusionCuisine_colors.css">
+        <script src="/jquery-3.5.1.min.js"></script>
+        <script src="/scriptProject.js"></script>
+    </head>
+
+
+    <body>
+        <div id="homepage">
+       <!--- CHANGE LANGUAGE ----->
+            <header>
+            <a href="fusionCuisine-eng.html"><div id="selectLang" class="liAnchor">ENG</div></a>
+            </header>
+
+       <!--- BACKGROUND ----->
+            <div id="c2" class="circle"></div>
+            <div id="c3" class="circle"></div>
+            <div class="grad"></div>
+
+
+       <!--- SIDEBAR -------------------------------------->
+
+       <div class="circle" id="navicon">☰</div>
+
+         <nav class="navbar">
+           <a href="/index-pt.html"><img src="/img/assin.svg" alt="mariana sou" id="signature"></a>
+               <ul id="navbarList">
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">ILUSTRAÇÃO</a></li>
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">DESIGN GRÁFICO</a></li>
+                 <li><a href="/index-pt.html#gallery" class= "liAnchor">CALIGRAFIA</a></li>
+                 <li><a href="/illustrGallery/gallery-pt.html" class= "liAnchor">GALERIA&nbsp;</a></li>
+                 <li><a href="/about-pt.html" class="liAnchor">SOBRE MIM</a></li>
+               </ul>
+
+           <div id="selectLangMobile"><a href="fusionCuisine-eng.html" class="liAnchor">ENG</a></div>
+           <div id="smIcons">
+           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_marianasou"><img src="/img/icons/insta.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://marianasou.tumblr.com"><img src="/img/icons/tumblr.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/marianasou8d31"><img src="/img/icons/behance.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mariana-sou/"><img src="/img/icons/linkedIn.svg" class="smIcons"></a>
+           <a target="_blank" rel="noopener noreferrer" href="mailto:marianasou.illustration@gmail.com"><img src="/img/icons/email2.svg" class="smIcons"></a>
+           </div>
+         </nav>
+
+
+            <!--- ZONA DOS PROJETOS --------------------------->
+            <main>
+              <div class="pagedecor" id="pagedecor1"><img src="/img/pagedecor1.svg"></div>
+              <div class="pagedecor" id="pagedecor2"><img src="/img/pagedecor2.svg"></div>
+
+            <div id="textZone">
+              <div id="titleSpecs">
+              <div id="titleBox">
+                <h1>Fusion Cuisine</h1>
+                <h2>Livro de Receitas</h2>
+              </div>
+                <ul>
+                <li>Livro de Capa Dura</li>
+                <li>A4 Vertical: 21cm x 29,7cm x 2cm</li>
+                <li>Ilustrações Digitais</li>
+                <li>Caligrafia Analógica (marcadores pta chanfrada + pincéis de tinta da china)</li>
+                <li>2018</li>
+              </ul>
+              </div>
+
+              <div id="description">
+                <p>
+                  Fusion Cuisine é um livro de culinária de receitas de cozinha de fusão, sendo que o seu design foi inspirado pelo movimento artístico do Cartaz Polaco, tendo como referência principal os espólio de Henryk Tomaszewsky e Jan Lenica.
+                  <br>O formato A4 vertical alude ao formato mais convencional do poster; a estética do projeto, combinando caligrafia analógica, ilustração digital e tipografia remete para a diversidade de materiais, técnicas, abordagens e estilos inerente ao auge do Cartaz Polaco.
+                  <br>A contracapa do livro, por outro lado, serve como uma referência à estética dos livros de receitas familiares, passados de geração em geração, rabiscados com anotações.
+                  <br>O projeto consiste num mockup de como seria um livro de receitas extenso, comercializável, seguindo uma determinada estética e sistema de grelhas.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="scrollMobile">scroll<span>&rarr;</span></div>
+
+            <div id="gallery">
+
+              <div class="column">
+                <img src="img/f1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f6.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f4.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f5.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f7.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f9.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f2.png"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f3.png"  onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+              </div>
+
+              <div class="column">
+                <img src="img/f8.png"  onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+              </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 9</div>
+                  <img src="img/f1.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 9</div>
+                  <img src="img/f6.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 9</div>
+                  <img src="img/f4.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 9</div>
+                  <img src="img/f5.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 9</div>
+                  <img src="img/f7.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 9</div>
+                  <img src="img/f9.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 9</div>
+                  <img src="img/f2.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">8 / 9</div>
+                  <img src="img/f3.png">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">9 / 9</div>
+                  <img src="img/f8.png">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+
+            <div class = "row2">
+
+                <div class="column2">
+                  <img class="demo cursor" src="img/f1.png" onclick="currentSlide(1)" alt="Capa e Contracapa do livro 'Fusion Cuisine'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f6.png" onclick="currentSlide(6)" alt="Títulos Caligráficos das Receitas">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f4.png" onclick="currentSlide(4)" alt="Spread de Receitas do Livro">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f5.png" onclick="currentSlide(5)" alt="Spread de Receitas do Livro">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f7.png" onclick="currentSlide(7)" alt="Close-up de 'Sushirritos'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f9.png" onclick="currentSlide(9)" alt="Close-up de 'Roasted Delicata Squash'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f2.png" onclick="currentSlide(2)" alt="Spread Introdutório de 'Fusion Cuisine'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f3.png" onclick="currentSlide(3)" alt="Spread Introdutório de 'Fusion Cuisine'">
+                </div>
+                <div class="column2">
+                  <img class="demo cursor" src="img/f8.png" onclick="currentSlide(8)" alt="Close-up das Ilustrações da Introdução">
+                </div>
+
+              </div>
+              </div>
+
+            </div>
+
+             <!-- gallery end of div-->
+            </main>
+
+            <footer>
+            </footer>
+
+
+
+        </div>
+    </body>
+
+</html>

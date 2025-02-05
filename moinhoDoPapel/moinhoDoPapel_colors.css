@@ -1,0 +1,59 @@
+/* stylesheet for CUSTOM PROJECT COLORS */
+
+/* --------------- DECORATIVE ELEMENTS > DESKTOP ----------------- */
+.circle{
+  background-color: #aed5e2;
+}
+
+#c2{
+box-shadow: 0px 0px 120px 150px #aed5e2;
+}
+
+#c3{
+box-shadow: 0px 0px 90px 120px #aed5e2;
+}
+
+.grad {
+  background-image: linear-gradient(to top,  #aed5e2, rgb(255,0,0,0));
+}
+
+.pagedecor{
+filter: invert(86%) sepia(25%) saturate(276%) hue-rotate(154deg) brightness(91%) contrast(94%);
+}
+
+/*----- DECOR ELEMENTS > SIDEBAR -----*/
+
+
+#navbarList li:hover{
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 231.5 41.16'%3E%3Ctitle%3Ehighlight2%3C/title%3E%3Cpath d='M102.3.86c12.7-.33,24,1.39,31.7,8.85.6.53,2.8.73,4.1.53C159.3,7.07,180.5,3.7,201.7.53c9.7-1.46,18.3,0,24.6,5.28,5.7,4.7,6.7,10.12,2.9,15.54-4.3,6.08-12.1,8.19-22,9.12C192.3,31.79,177.6,34,163,36.29c-13.9,2.18-27.5,5-42,4.75-8.9-.13-16.2-2.18-21.5-7a6.77,6.77,0,0,0-4.2-1.32c-5.5.59-11,1.32-16.4,2.24-16.7,3-33.5,5.75-50.9,6.15-2.1.07-4.2.07-6.2,0C2.8,40.45.9,34.43,0,25.05c-.4-3.77,2.9-7,7.9-8.92a114.29,114.29,0,0,1,14.7-4.56A386.32,386.32,0,0,1,102.3.86Z' transform='translate(0.03 0)' fill='%23aed5e2'/%3E%3C/svg%3E");
+/*no final, onde diz fill:23.... ALTERAR COR*/
+/*COR MAIS CLARA*/
+}
+
+.smIcons:hover, #signature:hover, #selectLang:hover{
+filter: invert(86%) sepia(25%) saturate(276%) hue-rotate(154deg) brightness(91%) contrast(94%);
+}
+
+
+/*----- PAGE SPECIFIC PLACEMENTS -----*/
+#pagedecor1{
+top: 2.5em;
+}
+
+@media screen and (max-width: 1800px){
+  #pagedecor1{
+  left: calc(320px + 10vw);
+  }
+}
+@media screen and (max-width: 1280px){
+  #pagedecor1{
+  top: calc(1em + 5vw + 45vh);
+  left: calc(380px + 10vw);
+  transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 800px){
+  #pagedecor1{
+    top: calc(6em + 40vh);
+    left: calc(5em + 12vw);
+  }
